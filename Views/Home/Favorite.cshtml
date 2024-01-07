@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = " Add Your Favourite Trail";
+}
+<h1>@ViewData["Title"]</h1>
+<form action="/Login" method="post">
+    <label for="id">ID:</label><br />
+    <input type="text" id="id" name="id" required>
+    <br>
+    <label for="name">Trail Name:</label><br />
+    <input type="text" id="name" name="name" required>
+    <br>
+    <label for="location">Location:</label><br />
+    <input type="text" id="location" name="location" required>
+    <br>
+    <label for="length">Length:</label><br />
+    <input type="text" id="length" name="length" required>
+    <br>
+    <input type="submit" value="Submit">
+</form>

@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Sign Up";
+}
+<h1>@ViewData["Title"]</h1>
+
+<div class="signup-container">
+    <form action="login" method="post"> 
+        <label for="uname">Username:</label><br> 
+        <input type="text" id="uname" name="uname"><br>
+        <label for="fname">First Name:</label><br> 
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="lname"><br> 
+        <label for="email">Email:</label><br> 
+        <input type="text" id="email" name="email"><br>
+        <label for="pwd">Password:</label><br> 
+        <input type="password" id="pwd" name="pwd"><br> 
+        <label for="role">Role:</label><br>
+        <select id="role" name="role"> 
+            <option value="user">User</option> 
+            <option value="admin">Admin</option>
+        </select><br> 
+        <input type="submit" value="Submit"> </form>
+    
+</div>

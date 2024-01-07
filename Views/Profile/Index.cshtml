@@ -1,0 +1,25 @@
+﻿@model ViewProfileModel
+@{
+    ViewData["Title"] = "Profile";
+}
+<h1>@ViewData["Title"]</h1>
+<form asp-action="Update" method="post">
+<label for="username">Username:</label>
+<br>
+<input type="text" id="username" name="username" value="@Model.Username">
+<br>
+<label for="password">Password:</label>
+<br>
+<input type="text" id="password" name="password" value="@Model.Password" readonly>
+<br>
+
+<label for="email">Email:</label>
+<br>
+<input type="text" id="email" name="email" value="@Model.Email" readonly>
+<br>
+
+<input type="submit" value="Submit">
+<a href="/profile/logout">Log Out</a>
+</form>
+
+

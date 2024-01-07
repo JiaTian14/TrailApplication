@@ -1,0 +1,40 @@
+﻿@{
+ViewData["Title"] = " View Trail";
+}
+<h1>@ViewData["Title"]</h1><br /><br />
+<form id=" view">
+<div class="vtable">
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Distance</th>
+            <th>TrailLevel</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Penang Hill Heritage Trail</td>
+            <td>5.1 KM</td>
+            <td>Hard</td>
+            <td>Get to know this 5.1-km out-and-back trail near Ayer Itam, Penang. Generally considered a challenging route, it takes an average of 3 h 19 min to complete. This is a very popular area for birding, hiking, and running, so you'll likely encounter other people while exploring. The trail is open year-round and is beautiful to visit anytime.</td>
+        </tr>
+        <tr>
+              <td>Mengkuang Dam</td>
+              <td>6.4 KM</td>
+              <td>Easy</td>
+              <td>Discover this 6.4-km out-and-back trail near Bukit Mertajam, Penang. Generally considered an easy route, it takes an average of 1 h 33 min to complete. This is a very popular area for running and walking, so you'll likely encounter other people while exploring. The trail is open year-round and is beautiful to visit anytime.</td>
+        </tr>
+        
+    </tbody>
+</table>
+</div>
+</form>
+
+<script>
+    document.getElementById('view').addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent the form from submitting
+        window.location.href = '/Trail'; // Navigate to the next page
+    });
+</script>
